@@ -1,6 +1,6 @@
 {
-  "name": "react-markdown-editor",
-  "version": "0.6.2",
+  "name": "react-markdown-editor-rus",
+  "version": "0.6.3",
   "description": "A markdown editor with preview, implemented with React.js and Reflux",
   "main": "dist/react-markdown-editor.js",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jrm2k6/react-markdown-editor.git"
+    "url": "git+https://github.com/vfisher92/react-markdown-editor-rus.git"
   },
   "dependencies": {
     "markdown": "^0.5.0",
@@ -68,5 +68,6 @@
     "react-dom": "^15.1.0",
     "react-tools": "^0.13.3",
     "webpack": "2.6.1"
-  }
+  },
+  "homepage": "https://github.com/vfisher92/react-markdown-editor-rus#readme"
 }
