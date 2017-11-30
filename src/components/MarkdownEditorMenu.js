@@ -32,8 +32,8 @@ var MarkdownEditorMenu = React.createClass({
     var makeListButton = this.getMakeListButton(_disabled, this.handleListButtonClick);
     var imageButton = this.getImageButton(_disabled, this.handleImageButtonClick);
     var linkButton = this.getLinkButton(_disabled, this.handleLinkButtonClick);
-    var headerButton = this.getButtonWithoutIcon(_disabled, this.handleHeaderButtonClick, 'md-editor-menu-header', 'Header');
-    var subHeaderButton = this.getButtonWithoutIcon(_disabled, this.handleSubHeaderButtonClick, 'md-editor-menu-subheader', 'Subheader');
+    var headerButton = this.getButtonWithoutIcon(_disabled, this.handleHeaderButtonClick, 'md-editor-menu-header', 'Заголовок');
+    var subHeaderButton = this.getButtonWithoutIcon(_disabled, this.handleSubHeaderButtonClick, 'md-editor-menu-subheader', 'Подзаголовок');
 
     var styleMarkdownMenu = MarkdownEditorMenu.defaultProps.styles.styleMarkdownMenu;
     objectAssign(styleMarkdownMenu, this.props.styles.styleMarkdownMenu);
