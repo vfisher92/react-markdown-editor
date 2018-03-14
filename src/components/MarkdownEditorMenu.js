@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Reflux = require('reflux');
+var PropTypes = require('prop-types');
 var ButtonManagerMixin = require('../mixins/ButtonManagerMixin');
 var MarkdownSelectionStore = require('../stores/MarkdownSelectionStore');
 var MarkdownEditorActions = require('../actions/MarkdownEditorActions');
@@ -10,7 +11,7 @@ var MarkdownEditorMenu = React.createClass({
   mixins: [Reflux.ListenerMixin, ButtonManagerMixin],
 
   propTypes: {
-    iconsSet: React.PropTypes.string.isRequired
+    iconsSet: PropTypes.string.isRequired
   },
 
   getInitialState: function() {
