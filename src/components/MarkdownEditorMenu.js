@@ -2,12 +2,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Reflux = require('reflux');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var ButtonManagerMixin = require('../mixins/ButtonManagerMixin');
 var MarkdownSelectionStore = require('../stores/MarkdownSelectionStore');
 var MarkdownEditorActions = require('../actions/MarkdownEditorActions');
 var objectAssign = require('object-assign');
 
-var MarkdownEditorMenu = React.createClass({
+var MarkdownEditorMenu = createReactClass({
   mixins: [Reflux.ListenerMixin, ButtonManagerMixin],
 
   propTypes: {

@@ -40,6 +40,7 @@
     "url": "git+https://github.com/vfisher92/react-markdown-editor-rus.git"
   },
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "markdown": "^0.5.0",
     "object-assign": "^4.1.0",
     "reflux": "^0.4.1"
