@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var PropTypes = require('prop-types');
 var MarkdownUtils = require('../utils/MarkdownUtils');
 var PublicMarkdownEditorActions = require('../actions/PublicMarkdownEditorActions');
 var TextAreaSelectionMixin = require('../mixins/TextAreaSelectionMixin');
@@ -7,8 +8,8 @@ var objectAssign = require('object-assign');
 
 var MarkdownEditorContent = React.createClass({
   propTypes: {
-    content: React.PropTypes.string.isRequired,
-    onChangeHandler: React.PropTypes.func.isRequired
+    content: PropTypes.string.isRequired,
+    onChangeHandler: PropTypes.func.isRequired
   },
 
   mixins: [TextAreaSelectionMixin],

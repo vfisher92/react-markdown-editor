@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Reflux = require('reflux');
+var PropTypes = require('prop-types');
 var Markdown = require('markdown').markdown;
 var MarkdownEditorActions = require('./actions/MarkdownEditorActions');
 var PublicMarkdownEditorActions = require('./actions/PublicMarkdownEditorActions');
@@ -30,10 +31,10 @@ var MarkdownEditor = React.createClass({
   mixins: [Reflux.ListenerMixin],
 
   propTypes: {
-    initialContent: React.PropTypes.string.isRequired,
-    iconsSet: React.PropTypes.oneOf(['font-awesome', 'materialize-ui']).isRequired,
-    onContentChange: React.PropTypes.func,
-    editorTabs: React.PropTypes.bool
+    initialContent: PropTypes.string.isRequired,
+    iconsSet: PropTypes.oneOf(['font-awesome', 'materialize-ui']).isRequired,
+    onContentChange: PropTypes.func,
+    editorTabs: PropTypes.bool
   },
 
   getInitialState: function() {
