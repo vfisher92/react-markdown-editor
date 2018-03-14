@@ -1,11 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Reflux = require('reflux');
+var createReactClass = require('create-react-class');
 var MarkdownEditorActions = require('../actions/MarkdownEditorActions');
 var MarkdownEditorTabsInteractionStore = require('../stores/MarkdownEditorTabsInteractionStore');
 var objectAssign = require('object-assign');
 
-var MarkdownEditorTabs = React.createClass({
+var MarkdownEditorTabs = createReactClass({
   mixins: [Reflux.ListenerMixin],
 
   getInitialState: function() {

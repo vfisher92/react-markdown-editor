@@ -1,12 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var MarkdownUtils = require('../utils/MarkdownUtils');
 var PublicMarkdownEditorActions = require('../actions/PublicMarkdownEditorActions');
 var TextAreaSelectionMixin = require('../mixins/TextAreaSelectionMixin');
 var objectAssign = require('object-assign');
 
-var MarkdownEditorContent = React.createClass({
+var MarkdownEditorContent = createReactClass({
   propTypes: {
     content: PropTypes.string.isRequired,
     onChangeHandler: PropTypes.func.isRequired

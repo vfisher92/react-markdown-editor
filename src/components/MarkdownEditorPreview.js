@@ -1,10 +1,11 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var Markdown = require('markdown').markdown;
 var objectAssign = require('object-assign');
 
-var MarkdownEditorPreview = React.createClass({
+var MarkdownEditorPreview = createReactClass({
   propTypes: {
     content: PropTypes.string.isRequired
   },

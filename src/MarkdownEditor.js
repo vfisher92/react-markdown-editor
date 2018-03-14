@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Reflux = require('reflux');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var Markdown = require('markdown').markdown;
 var MarkdownEditorActions = require('./actions/MarkdownEditorActions');
 var PublicMarkdownEditorActions = require('./actions/PublicMarkdownEditorActions');
@@ -27,7 +28,7 @@ var UrlMarkdownToken = MarkdownTokenFactory.UrlMarkdownToken;
 var ListMarkdownToken = MarkdownTokenFactory.ListMarkdownToken;
 var ImageMarkdownToken = MarkdownTokenFactory.ImageMarkdownToken;
 
-var MarkdownEditor = React.createClass({
+var MarkdownEditor = createReactClass({
   mixins: [Reflux.ListenerMixin],
 
   propTypes: {
